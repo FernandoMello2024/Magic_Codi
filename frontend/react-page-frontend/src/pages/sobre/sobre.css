@@ -1,0 +1,105 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url('../images/fundo.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff; 
+}
+
+h1 {
+    color: #bf0cec; 
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Texto */
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.texto p {
+    color: #ffffffdc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* Espaça os elementos */
+}
+
+.image {
+    max-width: 450px;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+}
+
+.image img {
+    width: 110%;
+    border-radius: 8px;
+    padding-left: 60px;
+}
+
+.texto-lateral {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    flex: 1 1 100%; 
+
+.texto-lateral p {
+    color: #ffffffdc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 70px;
+    
+    
+    
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin-bottom: 20px; 
+        margin-right: 0;
+    }
+
+    .texto-lateral {
+        max-width: 100%; 
+    }
+
+    .texto-lateral p {
+        text-align: center;
+        padding: 0 10px;
+    }
+}

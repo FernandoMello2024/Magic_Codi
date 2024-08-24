@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h1.titulo-servicos {
+    color: #9c0efa; 
+    font-size: 500%;
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #0a0b55; ;
+}
+
+/* Seção geral */
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: px;
+}
+
+/* Estilo para textos e imagens */
+.texto-top-esquerdo, .texto-meio-direito, .texto-baixo-esquerdo {
+    flex: 1;
+    padding: 50px;
+    height: 590px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.image-top-direito, .image-meio-esquerdo, .image-baixo-direito {
+    flex: 1;
+    text-align: right;
+}
+
+.image-top-direito img, .image-meio-esquerdo img, .image-baixo-direito img {
+    max-width: 100%;
+    height: 500px;
+    width: 800px;
+}
+
+/* Linha horizontal */
+.linha {
+    width: 100%;
+    height: 5px;
+    background-color: #9c0efa;
+    margin: 40px 0;
+}
+
+/* Texto inferior */
+.texto-inferior {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.images-inferior {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images-inferior img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .image-top-direito, .image-meio-esquerdo, .image-baixo-direito {
+        text-align: center;
+    }
+}
