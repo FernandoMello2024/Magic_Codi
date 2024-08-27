@@ -1,0 +1,88 @@
+.footer {
+  background-color: #06023d;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-coluna {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-coluna h2 {
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.footer-coluna ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 95px;
+}
+
+.footer-coluna ul li {
+  margin-bottom: 8px;
+}
+
+.footer-coluna ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-coluna ul li a:hover {
+  color: #ff6347; 
+}
+
+.logo img {
+  max-width: 120px; 
+  margin-bottom: 10px; 
+  margin-top: 100px;
+}
+
+.icones {
+  display: flex;
+  gap: 15px;
+}
+
+.icones a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.icones a:hover {
+  color: #ff6347; 
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .logo img {
+    margin-bottom: 10px; /* Ajuste para telas menores */
+  }
+}
